@@ -1,0 +1,21 @@
+{
+  "name": "microfrontend-two",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "webpack server",
+    "start:standalone": "webpack serve --env standalone",
+    "build": "webpack --mode=production",
+    "analyze": "webpack --mode=production --env analyze",
+    "lint": "eslint src",
+    "test": "jest --passWithNoTests",
+    "watch-tests": "jest --watch",
+    "check-format": "prettier --write .",
+    "coverage": "just --coverage",
+    "prepare": "husky"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
