@@ -3,9 +3,9 @@ const singleSpaDefaults = require("webpack-config-single-spa");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = (webpackConfigEnv, argv) => {
-    const originName = "my_microfrontend";
+    const originName = "react-single-spa-mf";
     const defalultConfig = singleSpaDefaults({
-        originName,
+        orgName,
         projectName: "microfrontend-root",
         webpackConfigEnv,
         argv,
